@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./auth.css"
+import "./Auth.css"
 import Axios from 'axios'
 import { useNavigate } from "react-router-dom";
 
@@ -46,11 +46,12 @@ function Auth() {
             <div className="registration">
                 <h1>Registration</h1>
                 <label>Username</label>
-                <input type="text" onChange={(e) =>{
+                <input type="text"  placeholder="Username..." onChange={(e) =>{
                     setUsernameReg(e.target.value);
                 }} />
+                <br></br>
                 <label> Password</label>
-                <input type="text" onChange={(e) =>{
+                <input type="text" placeholder="Password..." onChange={(e) =>{
                     setPasswordReg(e.target.value);
                 }}/>
                 <button onClick={register} >Register</button>
@@ -61,10 +62,12 @@ function Auth() {
 
         <div className="login">
             <h1>Login</h1>
+            <label>Username</label>
             <input type="text" placeholder="Username..."
             onChange={(e) =>{
                 setUsername(e.target.value);
             }} />
+            <label> Password</label>
             <input type="password" placeholder="Password..."
             onChange={(e) =>{
                 setPassword(e.target.value);

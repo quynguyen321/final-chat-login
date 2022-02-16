@@ -1,0 +1,41 @@
+*{
+    background-color: #46516e;
+}
+.App{
+    margin: auto;
+    width: 50%;
+    border: 1px solid lightgray;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+button{
+    background-color: pink;
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    color: #46516e;
+    font-size: 17px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  ::placeholder {
+    color: lightgray;
+  }
+  h1{
+    color: pink;
+    font-weight:100;
+  }
+  label{
+    color: pink;
+    font-weight:100;
+  }
+
+ 
